@@ -1,0 +1,12 @@
+_target_: model.pl_modules.BasePLModule
+
+model:
+  _target_: models.model.BaseModel
+  your_feature: 1
+
+optim_params:
+  optimizer: "radam"
+  lr: 2e-4
+  lm_lr: 2e-5
+  lm_weight_decay: 0.0
+  weight_decay: 0
